@@ -19,13 +19,19 @@ a{
 header{
 	width: 100%;
 	height: 80px;
+	position: fixed;
+	transition: 0.6s;
 }
-header .header{
+header .headersd{
 	margin: auto;
 	max-width: 1140px;
 	align-items: center;
 	display: flex;
 }
+header.sticky{
+	background-color: #00008B;
+	z-index: 1
+}header.sticky a{ color:white;}header.sticky .header-left{	color:white;}
 header .header-left{
 	font-weight: 700;
 	font-size: 20px;
@@ -64,7 +70,7 @@ box-shadow: 5px 5px 1em rgba(211,211,211,1); transition: 1s;
 /*MAIN*/
 main{
 	width: 100%;
-	min-height: calc(100vh - 80px); 
+	min-height: 100vh; 
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -96,6 +102,7 @@ div.rotulo p{font-size: 13px;font-weight: 700;font-family:"Open Sans",sans-serif
 /************************/
 /************************/
 /************************/
+section.quem-somos.reverse{width: 100%;display: flex;justify-content: space-around;padding: 30px; flex-wrap: wrap-reverse;}
 section.quem-somos.noreverse{width: 100%;display: flex;justify-content: space-around;padding: 30px;flex-wrap: wrap;}
 section.quem-somos div.right{width: 500px;height: 450px;display: flex;flex-direction: column;align-items: center;justify-content: center;}
 section.quem-somos div.right h1{text-align: center;font-size: 35px;margin-top: 10px}
@@ -105,7 +112,11 @@ section.quem-somos div.left{width: 500px;align-items: center;display:flex;justif
 section.quem-somos div.left img{width: 100%;object-fit: cover;z-index: 0;height: 100%}
 
 
-/*********************SOCIAL***********************/
+
+
+
+/**************************************************************************************************++*************/
+/*******************************************************SOCIAL****************************************************/
 section.quem-somos div.left div.social{background-color: white;display: flex;justify-content: center;align-items: center;position: absolute;bottom: 0;width: 100%;height: 20%;border-top-left-radius: 50px;border-top-right-radius: 50px;flex-wrap: wrap;opacity: 0; transition: 1s;}
 section.quem-somos div.left div.social a.social i{font-size: 30px;transition: 1s;}
 section.quem-somos div.left div.social a.social {width: 50px;height: 50px;display: flex;
@@ -128,10 +139,9 @@ section.quem-somos div.left div.social a.social#icon6:hover i.fab.fa-youtube{fon
 /***********************/
 section.quem-somos div.left img:hover ~ div.social{opacity: 1}
 section.quem-somos div.left div.social:hover{opacity: 1}
-/***********************/
+/***************************************************************************************************************/
+/***************************************************************************************************************/
 
-
-section.quem-somos.reverse{width: 100%;display: flex;justify-content: space-around;padding: 30px; flex-wrap: wrap-reverse;}
 
 
 
@@ -163,8 +173,8 @@ section.quem-somos.reverse{width: 100%;display: flex;justify-content: space-arou
 		display: none;
 	}header .header-right .limenu{
 		width: 60px;height: 60px;margin-right: 1px;display: flex;justify-content: center;align-items: center;flex-direction: column;
-		}
-			header .header-right li .menu{ height: 3px;width: 20px;background-color: black;margin: 1.5px;}
+		}	
+			header .header-right li .menu{ height: 3px;width: 20px;background-color: black;margin: 1.5px;}header.sticky .header-right li .menu{background-color: white;}
 	main{
 		height: auto;
 	}main div.about-us{padding: 10px;}main img{width:100vw;}

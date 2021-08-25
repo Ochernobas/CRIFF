@@ -14,11 +14,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-	<header><div class="header">
+	<header>
+		<div class="headersd">
 		<div class="header-left">CR<span class="criff">IFF</span></div>
 		<div class="header-right">
 			<ul>
-					<li><a href="" class="button">Quem Somos?</a></li>
+					<li><a href="#sobrenos" class="button">Quem Somos?</a></li>
 					<li><a href="" class="button">Inspirações</a></li>
 					<li><a href="" class="button">Projetos</a></li>
 					<li><a href="" class="button">Contato</a></li>
@@ -39,8 +40,9 @@
 		
 	</main>	
 
-<section class="offside"><div class="curva"></div>
-	<div class="rotulo">Sobre nós<p>Quem Somos?</p></div>
+<section class="offside"id="sobrenos">
+	<div class="curva"></div>
+	<div class="rotulo" >Sobre nós<p>Quem Somos?</p></div>
 		<section class="quem-somos noreverse">
 			<div class="left">
 				<img src="image/icon.jpg">
@@ -139,5 +141,22 @@
 	<section class="projetos"></section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	window.addEventListener("scroll", function(){
+		var header = document.querySelector("header");
+		header.classList.toggle("sticky", window.scrollY > 0);
+	})
+</script>
 </body>
 </html>
