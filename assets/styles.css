@@ -96,15 +96,14 @@ div.rotulo p{font-size: 13px;font-weight: 700;font-family:"Open Sans",sans-serif
 /************************/
 /************************/
 /************************/
-section.quem-somos{width: 100%;display: flex;justify-content: space-around;padding: 30px;flex-wrap: wrap-reverse;}
+section.quem-somos.noreverse{width: 100%;display: flex;justify-content: space-around;padding: 30px;flex-wrap: wrap;}
 section.quem-somos div.right{width: 500px;height: 450px;display: flex;flex-direction: column;align-items: center;justify-content: center;}
 section.quem-somos div.right h1{text-align: center;font-size: 35px;margin-top: 10px}
 section.quem-somos div.right p.sub{text-align: center;font-weight: 600;font-size: 13px;color: #444}
 section.quem-somos div.right p.desc{margin-top: 30px;text-align:center;}
 section.quem-somos div.left{width: 500px;align-items: center;display: flex;}
 section.quem-somos div.left img{width: 500px;object-fit: cover;}
-
-
+section.quem-somos.reverse{width: 100%;display: flex;justify-content: space-around;padding: 30px; flex-wrap: wrap-reverse;}
 
 
 
