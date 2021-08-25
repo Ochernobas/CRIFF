@@ -143,9 +143,29 @@ section.quem-somos div.left div.social:hover{opacity: 1}
 /***************************************************************************************************************/
 
 
-
-
-
+/************************************************PROJETOS*******************************************************/
+div.marcaagua{position: absolute;top: -20px;width: 100%;height: 20px;background-color: #4169E1;border-top-right-radius: 100%}
+div.marcaaguasecond{position: absolute;top:-20px;width: 200px;height: 25px;background-color: #4169E1;border-top-right-radius: 100%;}
+div.projetosrotulo{background-color: #4169E1;position: relative;height: 150px;box-shadow: 0 10px 10px rgba(65,105,225,0.5);
+display:flex;justify-content: center;align-items: center;font-size:45px;font-weight: 700;}
+/***************************************************************************************************************/
+div.titulo {font-size: 44px;text-align: center;margin:0;padding: 0;display: flex;flex-direction: column;justify-content: flex-end;align-items: center;height: 200px;font-weight: 600}
+div.titulo p{font-size: 15px;margin:0;padding: 0;font-weight: 400}
+/***************************************************************************************************************/
+section.projetos{display: flex;justify-content: space-around;align-items: center;padding: 80px 0}
+section.projetos div.texto{width: 500px;height: 505px;text-align: center;display: flex;align-items: center;flex-direction: column;justify-content: center;}
+section.projetos div.fabianico{width: 510px; height: 505px;background-color:rgba(0,0,0,0.1);box-shadow:0 1em 1em rgba(211,211,211,0.9);position: relative;border-radius:20px;overflow: hidden;}
+section.projetos div.fabianico div.iconbar{position: absolute;top: 0;bottom: 0;right: 0;width: 80px;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+section.projetos div.fabianico div.iconbar div.iconp{width: 80px;height: 80px;margin: 10px 0px;border-radius: 50%}
+section.projetos div.fabianico div.iconbar div.iconp img{width: 80px;height: 80px;border-radius: 50%;object-fit: cover;}
+section.projetos div.fabianico div.boxprojetoimg{display: flex;flex-direction:column-reverse;}
+section.projetos div.fabianico div.projetoimg{width:420px;height: 250px;}
+section.projetos div.fabianico div.projetoimg#one{border-radius: 10px;border-bottom-left-radius: 0px;transition: 1s;}
+section.projetos div.fabianico div.projetoimg#two{border-radius: 10px;border-top-left-radius: 0px;transition: 1s;}
+section.projetos div.fabianico div.projetoimg#one:hover{height: 400px}
+section.projetos div.projetoimg#one:hover ~ div.projetoimg#two{height: 105px; transition: 1s;}
+section.projetos div.projetoimg#two:hover{height: 400px;}
+section.projetos div.fabianico div.projetoimg img{width:100%;height: 100%;object-fit: cover;object-position: center;}
 
 
 
