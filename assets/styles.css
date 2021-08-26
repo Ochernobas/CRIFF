@@ -20,17 +20,20 @@ header{
 	width: 100%;
 	position: fixed;
 	transition: 0.6s;
+	background-color: white;
 }
 header .headersd{
 	margin: auto;
 	max-width: 1140px;
 	align-items: center;
 	display: flex;
+	background-color: white;
+	transition: 0.6s
 }
 header.sticky{
 	background-color: #0000ae;
 	z-index: 1;
-}header.sticky .header-right ul li a{color:white;}header.sticky .header-left a{	color:white;}
+}header.sticky .headersd {background-color:#0000ae;}header.sticky .header-right ul li a{color:white;}header.sticky .header-left a{	color:white;}
 header.sticky .button:hover{background-color: #0000ae;
 box-shadow: 3px 3px 1em rgba(0,0,150,0.5), inset 3px 3px 1em rgba(0,0,80,1);
 transition: 1s;}
@@ -285,7 +288,9 @@ footer{width: 100%;color: white;background-color: #333;height: 200px;}
 @media (max-width: 650px){
 	div.some{display: none}
 	.limenu{list-style-type: none}ul.dele{min-height: 100%;display: flex;justify-content: center;align-items: center;}
-			header .header-right li .menu{height: 5px;width: 23px;background-color: black;margin: 2px;margin-right: 15px;}  
+			header .header-right li .menu{height: 5px;width: 23px;background-color: black;margin: 2px;margin-right: 15px;}
+			header .header-right li .menu:nth-child(1){border-top-left-radius: 20px}
+			header .header-right li .menu:nth-child(3){border-bottom-left-radius: 20px}  
 			                              header.sticky .header-right li .menu{background-color: white;}
 	#check:checked ~ div.some{display:flex;height: 100vh;flex-direction: column;display: flex;justify-content: center;align-items: center;}
 	/*	header .header-right .limenu{background-color: red;
