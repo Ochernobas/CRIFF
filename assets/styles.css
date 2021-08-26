@@ -92,7 +92,7 @@ main img{
 }
 main div.about-us{
 	width: 500px;
-	height: 500px;text-align: center;cursor: default;
+	height: 500px;text-align: center;cursor: default;margin-bottom: 80px;
 }main div.about-us h1, p.subdesc{text-align: center;margin-top: 3px}
 
 main div.about-us p.pdesc{margin-top: 30px }
@@ -293,7 +293,7 @@ footer{width: 100%;color: white;background-color: #333;height: 200px;}
 			header .header-right li .menu{ height: 3px;width: 20px;background-color: black;margin: 1.5px;}header.sticky .header-right li .menu{background-color: white;}
 	main{
 		height: auto;
-	}main div.about-us{padding: 10px;}main img{width:100vw;}
+	}main div.about-us{padding: 10px;margin-bottom: 80px;}main img{width:100vw;}
 	main div.about-us{height: 600px;}
 
 	/**************************************/
@@ -316,17 +316,20 @@ footer{width: 100%;color: white;background-color: #333;height: 200px;}
 	/************************************/
 	/************************************/
 	section.projetos{padding: 0px;}
+	section.projetos div.texto{margin: 20px 0}
 	/************************************/
-	section.projetos div.fabianico div.iconbar div.descicon{font-size: 20px;margin-bottom: 20px;font-weight: 600;color: white}
-	section.projetos div.fabianico div.iconbar{position: absolute;top: 0;bottom: 0;right: 0;width: 50px;display: flex;justify-content: center;align-items: center;flex-direction: column;background-color: #00008B;border-bottom-left-radius: 10px;}
-	section.projetos div.fabianico div.iconbar div.iconp{width: 50px;height: 50px;margin: 10px 0px;border-radius: 50%}
-	section.projetos div.fabianico div.iconbar div.iconp img{width: 50px;height: 50px;border-radius: 50%;object-fit: cover;}
+	section.projetos div.fabianico div.iconbar div.descicon{font-size: 20px;margin-bottom: 20px;font-weight: 600;color: black}
+	section.projetos div.fabianico div.iconbar{position: absolute;top: 0;bottom: 0;right: 0;width: 80px;display: flex;justify-content: center;align-items: center;flex-direction: column;background-color: #bbb;border-bottom-left-radius: 10px;}
+	section.projetos div.fabianico div.iconbar div.iconp{width: 70px;height: 70px;margin: 10px 0px;border-radius: 50%}
+	section.projetos div.fabianico div.iconbar div.iconp img{width: 70px;height: 70px;border-radius: 50%;object-fit: cover;}
 	section.projetos div.fabianico div.boxprojetoimg{display: flex;flex-direction:column-reverse;}
 	section.projetos div.fabianico div.projetoimg#one{border-top: 1.5px solid black;}
-	section.projetos div.fabianico div.iconbar.reverse{position: absolute;top: 0;bottom: 0;left: 0px;}
+	section.projetos div.fabianico div.iconbar.reverse	{position: absolute;top: 0;bottom: 0;left: 0px;}
 	/************************************/
 	/************************************/	/************************************/
 	/************************************/
-	section.contato .cardcontato{border-radius:10px;max-width: 500px;margin: 0 10px}	
+	section.contato .cardcontato{border-radius:10px;max-width: 500px;margin: 0 10px}
+
+	footer{margin-top: 100px;}	
 }
 
