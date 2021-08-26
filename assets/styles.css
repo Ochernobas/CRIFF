@@ -29,9 +29,12 @@ header .headersd{
 	display: flex;
 }
 header.sticky{
-	background-color: #00008B;
-	z-index: 1
-}header.sticky a{ color:white;}header.sticky .header-left{	color:white;}
+	background-color: #0000ae;
+	z-index: 1;
+}header.sticky .header-right ul li a{color:white;}header.sticky .header-left a{	color:white;}
+header.sticky .button:hover{background-color: #0000ae;
+box-shadow: 3px 3px 1em rgba(0,0,150,0.5), inset 3px 3px 1em rgba(0,0,80,1);
+transition: 1s;}
 header .header-left{
 	font-weight: 700;
 	font-size: 20px;
@@ -40,28 +43,33 @@ header .header-left{
 	justify-content: center;
 	align-items: center;
 	height: 80px;
-}
+	text-decoration: none;
+}header .header-left a{text-decoration: none;color: black;}
 header .header-right{	
 	display: flex;
 	justify-content: flex-end;
 	flex:1;
 	align-items: center;
 	height: 80px;
+	padding-top:13px;
 }
 header .header-right ul{
 	display: flex;
 }
 header .header-right ul li{
 	list-style: none;
-
 }
-.button{
+header .header-right ul li a{
+	text-decoration: none;
+	color: black;
+}
+header .button{
 	display: block;
 	padding: 10px 20px;
 	border-radius: 20px;
 	font-weight: 400;
 }
-.button:hover{
+header .button:hover{
 background-color: rgba(211,211,211,0.1);
 box-shadow: 3px 3px 1em rgba(0,0,0,0.3), inset 3px 3px 1em rgba(211,211,211,0.4);
 box-shadow: 5px 5px 1em rgba(211,211,211,1); transition: 1s;
@@ -117,11 +125,16 @@ section.quem-somos div.left img{width: 100%;object-fit: cover;z-index: 0;height:
 
 /**************************************************************************************************++*************/
 /*******************************************************SOCIAL****************************************************/
-section.quem-somos div.left div.social{background-color: white;display: flex;justify-content: center;align-items: center;position: absolute;bottom: 0;width: 100%;height: 20%;border-top-left-radius: 50px;border-top-right-radius: 50px;flex-wrap: wrap;opacity: 0; transition: 1s;}
+section.quem-somos div.left div.social{background-color: white;display: flex;justify-content: center;align-items: center;position: absolute;bottom: 0;width: 100%;height: 20%;border-top-left-radius: 50px;border-top-right-radius: 50px;flex-wrap: wrap;opacity: 0; transition: 1s;overflow: hidden;}
 section.quem-somos div.left div.social a.social i{font-size: 30px;transition: 1s;}
+
+
 section.quem-somos div.left div.social a.social {width: 50px;height: 50px;display: flex;
-justify-content: center;align-items: center;border-radius: 50%;}
-section.quem-somos div.left div.social div.separador{height: 3px;background-color:black;width: 80%;}
+justify-content: center;align-items: center;border-radius: 50%;position: relative;bottom: 55px}
+section.quem-somos div.left div.social div.separador{height: 3px;background-color:black;width: 80%;position: relative;top: 20px;}
+
+section.quem-somos div.left:hover div.social a.social{bottom: 0px;transition: 1s}
+section.quem-somos div.left:hover div.social div.separador{top:0px;transition: 1s}
 /***********************/
 /*******COLOR***********/
 section.quem-somos div.left div.social a.social#icon1{background-image: linear-gradient(to bottom left,red, yellow);color:white;}
@@ -143,6 +156,21 @@ section.quem-somos div.left div.social:hover{opacity: 1}
 /***************************************************************************************************************/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************************************************************************************/
+/***************************************************************************************************************/
 /************************************************PROJETOS*******************************************************/
 div.marcaagua{position: absolute;top: -20px;width: 100%;height: 20px;background-color: #4169E1;border-top-right-radius: 100%}
 div.marcaaguasecond{position: absolute;top:-20px;width: 200px;height: 25px;background-color: #4169E1;border-top-right-radius: 100%;}
@@ -152,20 +180,88 @@ display:flex;justify-content: center;align-items: center;font-size:45px;font-wei
 div.titulo {font-size: 44px;text-align: center;margin:0;padding: 0;display: flex;flex-direction: column;justify-content: flex-end;align-items: center;height: 200px;font-weight: 600}
 div.titulo p{font-size: 15px;margin:0;padding: 0;font-weight: 400}
 /***************************************************************************************************************/
-section.projetos{display: flex;justify-content: space-around;align-items: center;padding: 80px 0}
+section.projetos{display: flex;justify-content: space-around;align-items: center;padding: 80px 0; flex-wrap: wrap;}
 section.projetos div.texto{width: 500px;height: 505px;text-align: center;display: flex;align-items: center;flex-direction: column;justify-content: center;}
-section.projetos div.fabianico{width: 510px; height: 505px;background-color:rgba(0,0,0,0.1);box-shadow:0 1em 1em rgba(211,211,211,0.9);position: relative;border-radius:20px;overflow: hidden;}
-section.projetos div.fabianico div.iconbar{position: absolute;top: 0;bottom: 0;right: 0;width: 80px;display: flex;justify-content: center;align-items: center;flex-direction: column;}
-section.projetos div.fabianico div.iconbar div.iconp{width: 80px;height: 80px;margin: 10px 0px;border-radius: 50%}
-section.projetos div.fabianico div.iconbar div.iconp img{width: 80px;height: 80px;border-radius: 50%;object-fit: cover;}
-section.projetos div.fabianico div.boxprojetoimg{display: flex;flex-direction:column-reverse;}
+section.projetos div.fabianico{width: 510px; height: 505px;background-color:rgba(0,0,0,0.1);box-shadow:0 1em 1em rgba(211,211,211,0.9);position: relative;border-radius:20px;overflow: hidden;flex-wrap: wrap;}
+section.projetos div.fabianico div.iconbar /*No Reverse*/{position: absolute;top: 0;bottom: 0;right: 3px;width: 80px;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+section.projetos div.fabianico div.boxprojetoimg a{margin: 0}
+section.projetos div.fabianico div.boxprojetoimg{display: flex;flex-direction:column-reverse;justify-content: flex-start;align-items: flex-start;}
 section.projetos div.fabianico div.projetoimg{width:420px;height: 250px;}
-section.projetos div.fabianico div.projetoimg#one{border-radius: 10px;border-bottom-left-radius: 0px;transition: 1s;}
-section.projetos div.fabianico div.projetoimg#two{border-radius: 10px;border-top-left-radius: 0px;transition: 1s;}
+section.projetos div.fabianico div.projetoimg#one, section.projetos div.fabianico div.projetoimg#two{transition: 1s;}
 section.projetos div.fabianico div.projetoimg#one:hover{height: 400px}
 section.projetos div.projetoimg#one:hover ~ div.projetoimg#two{height: 105px; transition: 1s;}
 section.projetos div.projetoimg#two:hover{height: 400px;}
-section.projetos div.fabianico div.projetoimg img{width:100%;height: 100%;object-fit: cover;object-position: center;}
+section.projetos div.fabianico div.projetoimg img{width:100%;height: 100%;object-fit: cover;}
+
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+section.projetos.windows{flex-direction: row-reverse;}
+section.projetos div.fabianico div.iconbar div.descicon{font-size: 20px;margin-bottom: 20px;font-weight: 600}
+section.projetos div.fabianico div.iconbar.reverse{position: absolute;top: 0;bottom: 0;left: 3px;width: 80px;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+section.projetos div.fabianico div.iconbar div.iconp{width: 80px;height: 80px;margin: 10px 0px;border-radius: 50%}
+section.projetos div.fabianico div.iconbar div.iconp img{width: 80px;height: 80px;border-radius: 50%;object-fit: cover;}
+section.projetos div.fabianico div.boxprojetoimg.reverse{display: flex;flex-direction:column-reverse;justify-content: flex-end;align-items: flex-end;}
+
+section.projetos div.fabianico div.boxprojetoimg.reverse{display: flex;flex-direction:column-reverse;}
+section.projetos div.fabianico div.boxprojetoimg.reverse div.projetoimg{width:420px;height: 250px;}
+section.projetos div.fabianico div.boxprojetoimg.reverse div.projetoimg#one{border-radius: 10px;border-bottom-left-radius: 0px;transition: 1s;}
+section.projetos div.fabianico div.boxprojetoimg.reverse div.projetoimg#two{border-radius: 10px;border-top-left-radius: 0px;transition: 1s;}
+section.projetos div.fabianico div.boxprojetoimg.reverse div.projetoimg#one:hover{height: 400px}
+section.projetos div.boxprojetoimg.reverse div.projetoimg#one:hover ~ div.boxprojetoimg.reverse div.projetoimg#two{height: 105px; transition: 1s;}
+section.projetos div.boxprojetoimg.reverse div.projetoimg#two:hover{height: 400px;}
+section.projetos div.fabianico div.boxprojetoimg.reverse div.projetoimg img{width:100%;height: 100%;object-fit: cover;object-position: center;}
+
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+/**********************************************Contato*********************************************************/
+section.contato{background-image:url(../image/bg.jpg);width: 100%;background-position: bottom;background-size: cover;margin-top: 30px;display: flex;justify-content: center;align-items: center;}
+section.contato .shadow{background-color: rgba(0,0,0,0.7);display: flex;align-items: center;width: 100%;height: 100%;padding: 50px 0}
+section.contato .cardcontato{background-color: rgba(250,250,250,0.65);backdrop-filter: blur(3px);box-shadow:0 0 1.5em rgba(120,120,120,0.75);margin: auto;height: 600px;width: 500px;border-radius: 25px;display: flex;flex-direction: column;overflow: hidden;}
+/***************************************************************************************************************/
+section.contato .cardcontato div.rotulologin{font-size: 40px;font-weight: 600;text-align: center;height: 180px;display: flex;justify-content: center;align-items: flex-end;}
+section.contato .cardcontato form{display: flex;align-items: center;flex-direction: column;height: 100%;padding-top: 50px;}
+section.contato .cardcontato form textarea{width: 80%;margin: 10px 0;}
+section.contato .cardcontato form textarea{background-color: #ddd;resize: none;}
+section.contato .cardcontato form textarea:focus{outline: none;text-decoration: none}
+section.contato .cardcontato form input[type="text"], input[type="email"]{border:none;border-bottom:1.5px solid black;padding: 20px;display: block;background-color: transparent;display: flex;width: 80%;margin: 10px 0;}
+section.contato .cardcontato form input[type="text"], input[type="email"]:focus{outline: none;text-decoration: none;}
+::placeholder{color: black}
+section.contato .cardcontato form input[type="submit"]{display: block;padding: 20px;border-radius:20px;margin-top: 10px;background-color:background-color: rgba(250,250,250,0.65);color: black;font-weight: 600;font-size: 16px;border:none;cursor: pointer;transition: 1s}
+section.contato .cardcontato form input[type="submit"]:hover{background-color: black;color: white;font-size: 18px}
+
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+/***************************************************************************************************************/
+
+
+footer{width: 100%;color: white;background-color: #333;height: 200px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -214,5 +310,23 @@ section.projetos div.fabianico div.projetoimg img{width:100%;height: 100%;object
 	section.quem-somos div.left div.social{position: relative;border-top-right-radius: 0%;border-top-left-radius:0%;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px}section.quem-somos div.left div.social a.social i{font-size: 20px;}
 	section.quem-somos div.left div.social a.social {width: 30px;height: 30px;}
 	section.quem-somos div.left div.social{opacity: 1}
+	section.quem-somos div.left div.social a.social {bottom:0}
+	section.quem-somos div.left div.social div.separador{top: 0}
+
+	/************************************/
+	/************************************/
+	section.projetos{padding: 0px;}
+	/************************************/
+	section.projetos div.fabianico div.iconbar div.descicon{font-size: 20px;margin-bottom: 20px;font-weight: 600;color: white}
+	section.projetos div.fabianico div.iconbar{position: absolute;top: 0;bottom: 0;right: 0;width: 50px;display: flex;justify-content: center;align-items: center;flex-direction: column;background-color: #00008B;border-bottom-left-radius: 10px;}
+	section.projetos div.fabianico div.iconbar div.iconp{width: 50px;height: 50px;margin: 10px 0px;border-radius: 50%}
+	section.projetos div.fabianico div.iconbar div.iconp img{width: 50px;height: 50px;border-radius: 50%;object-fit: cover;}
+	section.projetos div.fabianico div.boxprojetoimg{display: flex;flex-direction:column-reverse;}
+	section.projetos div.fabianico div.projetoimg#one{border-top: 1.5px solid black;}
+	section.projetos div.fabianico div.iconbar.reverse{position: absolute;top: 0;bottom: 0;left: 0px;}
+	/************************************/
+	/************************************/	/************************************/
+	/************************************/
+	section.contato .cardcontato{border-radius:10px;max-width: 500px;margin: 0 10px}	
 }
 

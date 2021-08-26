@@ -12,17 +12,27 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script type="text/javascript">
+			function contatar(){
+			document.getElementById('aqui').innerHTML="<section class='contato' id='contato'><div class='shadow'><div class='cardcontato'><div class='rotulologin'>Contato</div><form method='post' action='index.html'><input type='text' name='nome' placeholder='Nome'><input type='email' name='email' placeholder='Email'><textarea rows='5' cols='50'></textarea><input type='submit' name='mensagem' value='Enviar Mensagem'></form></div></div></section>";
+			}
+
+			window.addEventListener("scroll", function(){
+		var header = document.querySelector("header");
+		header.classList.toggle("sticky", window.scrollY > 0);
+	})
+	</script>
 </head>
 <body>
 	<header>
 		<div class="headersd">
-		<div class="header-left">CR<span class="criff">IFF</span></div>
+		<div class="header-left"><a href="#">CR<span class="criff">IFF</span></a></div>
 		<div class="header-right">
 			<ul>
 					<li><a href="#sobrenos" class="button">Quem Somos?</a></li>
-					<li><a href="" class="button">Inspirações</a></li>
 					<li><a href="#project" class="button">Projetos</a></li>
-					<li><a href="" class="button">Contato</a></li>
+					<li><a href="" class="button">Em Andamento</a></li>
+					<li><a href="#aqui" class="button" onclick="contatar()">Contato</a></li>
 					<li class="limenu">
 						<div class="menu"></div>
 						<div class="menu"></div>
@@ -43,7 +53,7 @@
 <section class="offside"id="sobrenos">
 	<div class="curva"></div>
 	<div class="rotulo" >Sobre nós<p>Quem Somos?</p></div>
-		<section class="quem-somos noreverse">
+		<section class="quem-somos noreverse" id="carlosdaniel">
 			<div class="left">
 				<img src="image/icon.jpg">
 				<div class="social">
@@ -66,15 +76,15 @@
 			
 		</section>
 
-	<section class="quem-somos reverse">
+	<section class="quem-somos reverse" id="carlossergio">
 			<div class="right">
-				<h1>Rafael Li Wu</h1>
+				<h1>Carlos Sergio</h1>
 				<p class="sub">Informatica 2B</p>
 				<br>		
 				<p class="desc">Temos outro texto, não muito importante porém não quero copiar um texto já escrito para colocar aqui, voce sabe que copyright se pegarem voce tu é multado absurdamente então simplesmente ignore esse texto provalvemente vai ter erro de digitação porém não muito menos importante talvez uma coisa dificil, porém nada irrelevante mais sim muito relevante é que não é deixado para lado ou largado como outra coisa, eu acho que é uma coisa única, uma peça lendária a coisa´que irei falar vai mudar tudo que voce ja viu ou já imaginou é supreendente oque ela pode fazer com voce, porém voce tem que ter cuidado, a maioria dos casos são perigosos</p>
 			</div>
 			<div class="left">
-				<img src="image/image10.jpg">
+				<img src="image/img1.png">
 				<div class="social">
 					<a href="#" class="social" id="icon1"><i class="fab fa-instagram" ></i></a>
 					<a href="#" class="social" id="icon2"><i class="fab fa-facebook-f"></i></a>
@@ -88,7 +98,53 @@
 			</div>
 		</section>
 
-			<section class="quem-somos noreverse">
+			<section class="quem-somos noreverse" id="nathan">
+			<div class="left">
+				<img src="image/image11.jpg">
+				<div class="social">
+					<a href="#" class="social" id="icon1"><i class="fab fa-instagram" ></i></a>
+					<a href="#" class="social" id="icon2"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social" id="icon3"><i class="fab fa-github" ></i></a>
+					<a href="#" class="social" id="icon4"><i class="fab fa-tiktok" ></i></a>
+					<a href="#" class="social" id="icon5"><i class="fab fa-twitter" ></i></a>
+					<a href="#" class="social" id="icon6"><i class="fab fa-youtube" ></i></a>
+
+					<p><div class="separador"></div></p>
+				</div>
+			</div>
+			<div class="right">
+				<h1>Nathan</h1>
+				<p class="sub">Ex-Aluno</p>
+				<br>		
+				<p class="desc">Temos outro texto, não muito importante porém não quero copiar um texto já escrito para colocar aqui, voce sabe que copyright se pegarem voce tu é multado absurdamente então simplesmente ignore esse texto provalvemente vai ter erro de digitação porém não muito menos importante talvez uma coisa dificil, porém nada irrelevante mais sim muito relevante é que não é deixado para lado ou largado como outra coisa, eu acho que é uma coisa única, uma peça lendária a coisa´que irei falar vai mudar tudo que voce ja viu ou já imaginou é supreendente oque ela pode fazer com voce, porém voce tem que ter cuidado, a maioria dos casos são perigosos</p>
+			</div>
+		
+		</section>
+
+			<section class="quem-somos reverse" id="rafaelli">
+			<div class="right">
+				<h1>Rafael Li Wu</h1>
+				<p class="sub">Informatica 2B</p>
+				<br>		
+				<p class="desc">Temos outro texto, não muito importante porém não quero copiar um texto já escrito para colocar aqui, voce sabe que copyright se pegarem voce tu é multado absurdamente então simplesmente ignore esse texto provalvemente vai ter erro de digitação porém não muito menos importante talvez uma coisa dificil, porém nada irrelevante mais sim muito relevante é que não é deixado para lado ou largado como outra coisa, eu acho que é uma coisa única, uma peça lendária a coisa´que irei falar vai mudar tudo que voce ja viu ou já imaginou é supreendente oque ela pode fazer com voce, porém voce tem que ter cuidado, a maioria dos casos são perigosos</p>
+			</div>
+			<div class="left">
+					<img src="image/image10.jpg">
+				<div class="social">
+					<a href="#" class="social" id="icon1"><i class="fab fa-instagram" ></i></a>
+					<a href="#" class="social" id="icon2"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social" id="icon3"><i class="fab fa-github" ></i></a>
+					<a href="#" class="social" id="icon4"><i class="fab fa-tiktok" ></i></a>
+					<a href="#" class="social" id="icon5"><i class="fab fa-twitter" ></i></a>
+					<a href="#" class="social" id="icon6"><i class="fab fa-youtube" ></i></a>
+
+					<p><div class="separador"></div></p>
+				</div>
+				
+			</div>
+
+		</section>
+		<section class="quem-somos noreverse" id="rafaelsoares">
 			<div class="left">
 				<img src="image/image6.jpg">
 				<div class="social">
@@ -108,10 +164,10 @@
 				<br>		
 				<p class="desc">Temos outro texto, não muito importante porém não quero copiar um texto já escrito para colocar aqui, voce sabe que copyright se pegarem voce tu é multado absurdamente então simplesmente ignore esse texto provalvemente vai ter erro de digitação porém não muito menos importante talvez uma coisa dificil, porém nada irrelevante mais sim muito relevante é que não é deixado para lado ou largado como outra coisa, eu acho que é uma coisa única, uma peça lendária a coisa´que irei falar vai mudar tudo que voce ja viu ou já imaginou é supreendente oque ela pode fazer com voce, porém voce tem que ter cuidado, a maioria dos casos são perigosos</p>
 			</div>
-		
+			
 		</section>
 
-			<section class="quem-somos reverse">
+					<section class="quem-somos reverse" id="ronald">
 			<div class="right">
 				<h1>Ronald Oliveira</h1>
 				<p class="sub">Informatica 2B</p>
@@ -137,6 +193,7 @@
 </section>
 
 
+
 	
 	<div class="projetosrotulo" >
 		<div class="marcaagua">
@@ -157,10 +214,11 @@
 		</div>
 		<div class="fabianico">
 			<div class="iconbar">
-				<div class="iconp"><img src="image/icon.jpg"></div>
-				<div class="iconp"><img src="image/image10.jpg"></div>
-				<div class="iconp"><img src="image/image6.jpg"></div>
-				<div class="iconp"><img src="image/image4.jpg"></div>
+				<div class="descicon">Team</div>
+				<a href="#nathan"><div class="iconp"><img src="image/image11.jpg" title="Nathan"></div></a>
+				<a href="#rafaelli"><div class="iconp"><img src="image/image10.jpg" title="Rafael Li Wu"></div></a>
+				<a href="#rafaelsoares"><div class="iconp"><img src="image/image6.jpg" title="Rafael Soares"></div></a>
+				<a href="#ronald"><div class="iconp"><img src="image/image4.jpg" title="Ronald Oliveira"></div></a>
 			</div>
 			<div class="boxprojetoimg">
 				<div class="projetoimg" id="one"><a href="https://www.instagram.com/p/CNsHK_8ADu4/" target="_blank"><img src="image/instagram2.png"></a></div>
@@ -170,6 +228,71 @@
 	</section>
 
 
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+
+<div class="titulo">História do Windows<p></p></div>
+
+	<section class="projetos windows">
+		
+		<div class="texto">
+			<p>Temos outro texto, não muito importante porém não quero copiar um texto já escrito para colocar aqui, voce sabe que copyright se pegarem voce tu é multado absurdamente então simplesmente ignore esse texto provalvemente vai ter erro de digitação porém não muito menos importante talvez uma coisa dificil, porém nada irrelevante mais sim muito relevante é que não é deixado para lado ou largado como outra coisa, eu acho que é uma coisa única, uma peça lendária a coisa´que irei falar vai mudar tudo que voce ja viu ou já imaginou é supreendente oque ela pode fazer com voce, porém voce tem que ter cuidado, a maioria dos casos são perigosos</p><br><p>
+			dificil, porém nada irrelevante mais sim muito relevante é que não é deixado para lado ou largado como outra coisa, eu acho que é uma coisa única, uma peça lendária a coisa´que irei falar vai mudar tudo que voce ja viu ou já imaginou é supreendente oque ela pode fazer com voce, porém voce tem que ter cuidado, a maioria dos casos são perigosos</p>
+		</div>
+		<div class="fabianico">
+			<div class="iconbar reverse">
+				<div class="descicon">Team</div>
+				<a href="#carlossergio"><div class="iconp"><img src="image/img1.png" title="Carlos Sergio"></div></a>
+				<a href="#rafaelli"><div class="iconp"><img src="image/image10.jpg" title="Rafael Li Wu"></div></a>
+				<a href="#rafaelsoares"><div class="iconp"><img src="image/image6.jpg" title="Rafael Soares"></div></a>
+				<a href="#ronald"><div class="iconp"><img src="image/image4.jpg" title="Ronald Oliveira"></div></a>
+			</div>
+			<div class="boxprojetoimg reverse">
+				<div class="projetoimg" id="one"><a href="https://www.youtube.com/watch?v=Hv7L5DD2DjM" target="_blank"><img src="image/win.png"></a></div>
+				<div class="projetoimg" id="two"><a href="https://www.microsoft.com/pt-br/windows/" target="_blank"><img src="image/windows.jpg"></a></div>
+			</div>
+		<div>
+	</section>
+
+<!---->
+
+	<div class="titulo">Olimpíadas 2028<p></p></div>
+	
+		<section class="projetos">
+		
+		<div class="texto">
+			<p>Temos outro texto, não muito importante porém não quero copiar um texto já escrito para colocar aqui, voce sabe que copyright se pegarem voce tu é multado absurdamente então simplesmente ignore esse texto provalvemente vai ter erro de digitação porém não muito menos importante talvez uma coisa dificil, porém nada irrelevante mais sim muito relevante é que não é deixado para lado ou largado como outra coisa, eu acho que é uma coisa única, uma peça lendária a coisa´que irei falar vai mudar tudo que voce ja viu ou já imaginou é supreendente oque ela pode fazer com voce, porém voce tem que ter cuidado, a maioria dos casos são perigosos</p><br><p>
+			dificil, porém nada irrelevante mais sim muito relevante é que não é deixado para lado ou largado como outra coisa, eu acho que é uma coisa única, uma peça lendária a coisa´que irei falar vai mudar tudo que voce ja viu ou já imaginou é supreendente oque ela pode fazer com voce, porém voce tem que ter cuidado, a maioria dos casos são perigosos</p>
+		</div>
+		<div class="fabianico">
+			<div class="iconbar">
+				<div class="descicon">Team</div>
+				<a href="#rafaelli"><div class="iconp"><img src="image/image10.jpg" title="Rafael Li Wu"></div></a>
+				<a href="#rafaelsoares"><div class="iconp"><img src="image/image6.jpg" title="Rafael Soares"></div></a>
+				<a href="#ronald"><div class="iconp"><img src="image/image4.jpg" title="Ronald Oliveira"></div></a>
+			</div>
+			<div class="boxprojetoimg">
+			<div class="projetoimg" id="one"><a href="https://www.youtube.com/watch?v=jzHnaCGmUFo" target="_blank"><img src="image/logo.jpg"></a></div>
+				<div class="projetoimg" id="two"><a href="https://pt.wikipedia.org/wiki/Singapura" target="_blank"><img src="image/cidadesingapura.jpg"></a></div>
+			</div>
+		<div>
+	</section>
+
+
+
+
+	<footer></footer>
+
+
+
+
+
+	<section id="aqui"></section>
 
 
 
@@ -180,11 +303,11 @@
 
 
 
-<script type="text/javascript">
-	window.addEventListener("scroll", function(){
-		var header = document.querySelector("header");
-		header.classList.toggle("sticky", window.scrollY > 0);
-	})
-</script>
+
+
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/pooper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
